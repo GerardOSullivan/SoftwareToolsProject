@@ -1,0 +1,168 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Allison&family=Irish+Grover&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800');
+
+body {
+	padding-top: 50px;
+	padding-bottom: 20px;
+	font-family: 'Raleway', sans-serif;
+	color: red !important;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+
+.dl-horizontal dt {
+	white-space: normal;
+}
+
+.navbar {
+	background-color: black;
+	color: red;
+}
+
+.navbar-collapse input[type=text] {
+	padding: 6px;
+	border: none;
+	margin-top: 8px;
+	margin-right: 16px;
+	font-size: 17px;
+}
+
+.navbar-brand {
+	font-family: 'Irish Grover', cursive;
+	font-size: 40px;
+	color: red;
+}
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+	max-width: 280px;
+}
+
+* {
+	color: black;
+}
+
+.DVD_Container {
+	background-color: #E3E5E5;
+	padding: 40px;
+	margin-top: 20px;
+	border: 2px solid black;
+}
+
+.DVD_Container p{
+
+	font-weight:bold;
+	font-size:16px;
+	}
+
+.card-box {
+	min-height: 220px;
+	position: relative;
+	padding: 10px 10px;
+	margin-bottom: 20px;
+	background-color: white;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+	position: relative;
+	border: 2px solid black;
+}
+
+.card-box:after {
+	display: block;
+	background: #2196F3;
+	content: '';
+	width: 100%;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+}
+
+.card-title h4 {
+	margin: 0;
+	text-align: center;
+	padding-top: 10%;
+	font-size: 16px;
+	line-height: 1;
+}
+
+.wrapper{
+	float:right;
+}
+	.wrapper .search-input {
+		border-radius: 5px;
+		position: relative;
+		box-shadow: 0px 1px 5px 3px rgba(0,0,0,0.12);
+	}
+
+.search-input input {
+	width: 100%;
+	outline: none;
+	border: none;
+	border-radius: 5px;
+	padding: 0 60px 0 20px;
+	font-size: 18px;
+	box-shadow: 0px 1px 5px rgba(0,0,0,0.1);
+}
+
+.search-input.active input {
+	border-radius: 5px 5px 0 0;
+}
+
+.search-input .autocom-box {
+	position:absolute;
+	background:#fff;
+	padding: 0;
+	opacity: 0;
+	pointer-events: none;
+	max-height: 280px;
+	overflow-y: auto;
+	box-shadow:inherit;
+}
+
+.search-input.active .autocom-box {
+	padding: 10px 8px;
+	opacity: 1;
+	pointer-events: auto;
+}
+
+.autocom-box li {
+	list-style: none;
+	padding: 8px 12px;
+	display: none;
+	width: 100%;
+	cursor: default;
+	border-radius: 3px;
+}
+
+.search-input.active .autocom-box li {
+	display: block;
+}
+
+.autocom-box li:hover {
+	background: #efefef;
+}
+
+.search-input .icon {
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	height: 55px;
+	width: 55px;
+	text-align: center;
+	line-height: 55px;
+	font-size: 20px;
+	color: #644bff;
+	cursor: pointer;
+}
